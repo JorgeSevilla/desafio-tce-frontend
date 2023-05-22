@@ -1,0 +1,32 @@
+<h2>Lista Usuários</h2>
+
+<input type="text" [(ngModel)]="filter" placeholder="Búsqueda por name, username o email" (input)="searchUsers()" class="input-search" />
+
+<table class="user-table">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Username</th>
+      <th>Password</th>
+      <th>Is Enabled</th>
+      <th>Register Date</th>
+      <th>Name</th>
+      <th>Surname</th>
+      <th>Email</th>
+      <th>Phone</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of users">
+      <td>{{ user.id }}</td>
+      <td>{{ user.username }}</td>
+      <td>{{ user.password }}</td>
+      <td>{{ user.isEnabled }}</td>
+      <td>{{ user.registerDate }}</td>
+      <td>{{ user.name }}</td>
+      <td>{{ user.surname }}</td>
+      <td>{{ user.email }}</td>
+      <td>{{ user.phone }}</td>
+    </tr>
+  </tbody>
+</table>

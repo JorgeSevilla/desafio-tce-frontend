@@ -1,0 +1,30 @@
+.user-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .user-table th, .user-table td {
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .user-table th {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .user-table td {
+    border-bottom: 1px solid #ccc;
+  }
+
+  .input-search {
+    margin-bottom: 25px;
+    margin: 5px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 300px;
+    height: 30px;
+    font-size: 16px; 
+    color: #999;
+  }
